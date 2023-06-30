@@ -31,7 +31,9 @@ class Player {
         c.lineTo(this.position.x - 10, this.position.y + 10)
         c.closePath()
         c.strokeStyle = "white"
+        c.fillStyle = 'black'
         c.stroke()
+        c.fill()
         c.restore()
     }
 
@@ -91,6 +93,8 @@ class Asteroid {
         c.arc(this.position.x, this.position.y, this.radius, 0, 2*Math.PI, false)
         c.closePath()
         c.strokeStyle = 'white'
+        c.fillStyle = 'black'
+        c.fill()
         c.stroke()
     }
 
@@ -209,7 +213,7 @@ function animate() {
 
     c.clearRect(0, 0, canvas.width, canvas.height)
 
-    player.update()
+    
 
 
 
@@ -257,7 +261,7 @@ function animate() {
         
     }
     
-
+    player.update()
 
 
     if (keys.w.pressed) {
