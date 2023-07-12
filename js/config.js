@@ -1,0 +1,7 @@
+const CONFIG = {
+    PLAYER_SPEED: 3,
+    PLAYER_ROTATIONAL_SPEED: 0.05,
+    PLAYER_FRICTION: 0.97,
+    PROJECTILE_SPEED: 5
+}
+export default CONFIG
